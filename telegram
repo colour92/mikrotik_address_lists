@@ -1,1 +1,11 @@
-
+/ip/firewall/address-list add list=telegram address=8.6.112.0/24
+/ip/firewall/address-list add list=telegram address=8.47.69.0/24
+/ip/firewall/address-list add list=telegram address=92.204.210.166/32
+/ip/firewall/address-list add list=telegram address=95.161.64.0/24
+/ip/firewall/address-list add list=telegram address=149.154.162.0/24
+/ip/firewall/address-list add list=telegram address=149.154.164.13/32
+/ip/firewall/address-list add list=telegram address=149.154.167.0/24
+/ip/firewall/address-list add list=telegram address=149.154.170.96/32
+/ip/firewall/address-list add list=telegram address=149.154.171.0/24
+/ip/firewall/address-list add list=telegram address=149.154.175.16/32
+/ip/firewall/address-list add list=telegram address=188.166.3.205/32

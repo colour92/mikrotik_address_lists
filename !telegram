@@ -1,3 +1,12 @@
+/ip/firewall/address-list add list=telegram address=telegram.org
+/ip/firewall/address-list add list=telegram address=t.me
+/ip/firewall/address-list add list=telegram address=telegram.me
+/ip/firewall/address-list add list=telegram address=telegram.dog
+/ip/firewall/address-list add list=telegram address=telegram-cdn.org
+/ip/firewall/address-list add list=telegram address=telegram.space
+/ip/firewall/address-list add list=telegram address=telegra.ph
+/ip/firewall/address-list add list=telegram address=tdesktop.com
+
 /ip/firewall/address-list add list=telegram address=92.204.210.166/32
 /ip/firewall/address-list add list=telegram address=95.161.64.0/24
 /ip/firewall/address-list add list=telegram address=104.20.26.203/32

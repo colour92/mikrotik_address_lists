@@ -18,6 +18,10 @@
 /ip/firewall/address-list add list=openai address=chatgpt.live
 /ip/firewall/address-list add list=openai address=chat.openai.com.edgekey.net
 /ip/firewall/address-list add list=openai address=openaicom.azure-api.net
+/ip firewall address-list add list=openai address=oaiusercontent.com
+/ip firewall address-list add list=openai address=oaistatic.com
+/ip firewall address-list add list=openai address=chatgpt.livekit.cloud
+/ip firewall address-list add list=openai address=challenges.cloudflare.com
 
 /ip/firewall/address-list add list=openai address=5.101.152.54/32
 /ip/firewall/address-list add list=openai address=13.107.213.45/32

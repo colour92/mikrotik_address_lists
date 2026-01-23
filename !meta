@@ -59,3 +59,4 @@
 /ip/firewall/address-list add list=meta address=185.89.216.0/22
 /ip/firewall/address-list add list=meta address=199.201.64.0/22
 /ip/firewall/address-list add list=meta address=204.15.20.0/22
+/ip/firewall/address-list add list=meta address=31.13.72.0/24

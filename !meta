@@ -1,3 +1,7 @@
+/ip/firewall/address-list add list=meta address=static.whatsapp.net
+/ip/firewall/address-list add list=meta address=dit.whatsapp.net
+/ip/firewall/address-list add list=meta address=app-analytics-services-att.com
+/ip/firewall/address-list add list=meta address=app-analytics-services.com
 /ip/firewall/address-list add list=meta address=facebook.com
 /ip/firewall/address-list add list=meta address=fb.com
 /ip/firewall/address-list add list=meta address=fb.me

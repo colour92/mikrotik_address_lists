@@ -1341,3 +1341,26 @@
 /ip/firewall/address-list add list=any address=github.githubassets.com
 /ip/firewall/address-list add list=any address=pipelines.actions.githubusercontent.com
 /ip/firewall/address-list add list=any address=github.io
+/ip/firewall/address-list add list=any address=speedtest.net
+/ip/firewall/address-list add list=any address=www.speedtest.net
+/ip/firewall/address-list add list=any address=beta.speedtest.net
+/ip/firewall/address-list add list=any address=install.speedtest.net
+/ip/firewall/address-list add list=any address=help.speedtest.net
+/ip/firewall/address-list add list=any address=ipv6.speedtest.net
+/ip/firewall/address-list add list=any address=c.speedtest.net
+/ip/firewall/address-list add list=any address=d.speedtest.net
+/ip/firewall/address-list add list=any address=assets.speedtest.net
+/ip/firewall/address-list add list=any address=ookla.com
+/ip/firewall/address-list add list=any address=www.ookla.com
+/ip/firewall/address-list add list=any address=api.ookla.com
+/ip/firewall/address-list add list=any address=status.ookla.com
+/ip/firewall/address-list add list=any address=104.16.0.0/12
+/ip/firewall/address-list add list=any address=151.101.0.0/16
+/ip/firewall/address-list add list=any address=13.32.0.0/15
+/ip/firewall/address-list add list=any address=52.84.0.0/15
+/ip/firewall/address-list add list=any address=34.192.0.0/10
+
+
+
+
+

@@ -1435,3 +1435,4 @@
 /ip/firewall/address-list add list=any address=172.64.146.0/24
 /ip/firewall/address-list add list=any address=172.65.90.0/24
 /ip/firewall/address-list add list=any address=184.105.99.79
+/ip/firewall/address-list add list=any address=meta.ai

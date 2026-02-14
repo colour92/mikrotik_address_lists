@@ -1102,7 +1102,6 @@
 /ip/firewall/address-list add list=meta address=192.114.0.0/16
 /ip/firewall/address-list add list=meta address=192.124.0.0/16
 /ip/firewall/address-list add list=meta address=192.141.0.0/16
-/ip/firewall/address-list add list=meta address=192.168.0.0/16
 /ip/firewall/address-list add list=meta address=192.178.0.0/16
 /ip/firewall/address-list add list=meta address=192.232.0.0/16
 /ip/firewall/address-list add list=meta address=193.4.0.0/16

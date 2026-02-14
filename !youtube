@@ -22,7 +22,6 @@
 /ip/firewall/address-list add list=youtube address=redirector.googlevideo.com
 /ip/firewall/address-list add list=youtube address=manifest.googlevideo.com
 /ip/firewall/address-list add list=youtube address=youtubei.googleapis.com
-
 /ip/firewall/address-list add list=youtube address=1.9.57.0/24
 /ip/firewall/address-list add list=youtube address=1.9.91.0/24
 /ip/firewall/address-list add list=youtube address=1.37.40.0/24

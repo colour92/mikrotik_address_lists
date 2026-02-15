@@ -1,5 +1,6 @@
 /ip/firewall/address-list add list=telegram address=telegram.org
 /ip/firewall/address-list add list=telegram address=t.me
+/ip/firewall/address-list add list=telegram address=web.telegram.org
 /ip/firewall/address-list add list=telegram address=telegram.me
 /ip/firewall/address-list add list=telegram address=telegram.dog
 /ip/firewall/address-list add list=telegram address=telegram-cdn.org

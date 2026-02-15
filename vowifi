@@ -1,0 +1,4 @@
+/ip/firewall/address-list add list=vowifi address=epdg.epc.mnc001.mcc250.pub.3gppnetwork.org
+/ip/firewall/address-list add list=vowifi address=epdg.epc.mnc002.mcc250.pub.3gppnetwork.org
+/ip/firewall/address-list add list=vowifi address=epdg.epc.mnc099.mcc250.pub.3gppnetwork.org
+/ip/firewall/address-list add list=vowifi address=epdg.epc.mnc020.mcc250.pub.3gppnetwork.org

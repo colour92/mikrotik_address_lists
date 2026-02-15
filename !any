@@ -69,45 +69,6 @@
 /ip/firewall/address-list add list=any address=www.ookla.com comment=Speedtest
 /ip/firewall/address-list add list=any address=api.ookla.com comment=Speedtest
 /ip/firewall/address-list add list=any address=status.ookla.com comment=Speedtest
-/ip/firewall/address-list add list=any address=openai.com comment=AI
-/ip/firewall/address-list add list=any address=chat.openai.com comment=AI
-/ip/firewall/address-list add list=any address=api.openai.com comment=AI
-/ip/firewall/address-list add list=any address=platform.openai.com comment=AI
-/ip/firewall/address-list add list=any address=auth.openai.com comment=AI
-/ip/firewall/address-list add list=any address=cdn.openai.com comment=AI
-/ip/firewall/address-list add list=any address=oaistatic.com comment=AI
-/ip/firewall/address-list add list=any address=oaiusercontent.com comment=AI
-/ip/firewall/address-list add list=any address=anthropic.com comment=AI
-/ip/firewall/address-list add list=any address=api.anthropic.com comment=AI
-/ip/firewall/address-list add list=any address=claude.ai comment=AI
-/ip/firewall/address-list add list=any address=console.anthropic.com comment=AI
-/ip/firewall/address-list add list=any address=ai.google.dev comment=AI
-/ip/firewall/address-list add list=any address=generativeai.googleapis.com comment=AI
-/ip/firewall/address-list add list=any address=gemini.google.com comment=AI
-/ip/firewall/address-list add list=any address=bard.google.com comment=AI
-/ip/firewall/address-list add list=any address=perplexity.ai comment=AI
-/ip/firewall/address-list add list=any address=api.perplexity.ai comment=AI
-/ip/firewall/address-list add list=any address=mistral.ai comment=AI
-/ip/firewall/address-list add list=any address=api.mistral.ai comment=AI
-/ip/firewall/address-list add list=any address=console.mistral.ai comment=AI
-/ip/firewall/address-list add list=any address=chatgpt.com comment=AI
-/ip/firewall/address-list add list=any address=auth0.openai.com comment=AI
-/ip/firewall/address-list add list=any address=oauth-api.openai.com comment=AI
-/ip/firewall/address-list add list=any address=oaidalleapiprodscus.blob.core.windows.net comment=AI
-/ip/firewall/address-list add list=any address=openaiapi-site.azureedge.net comment=AI
-/ip/firewall/address-list add list=any address=openaicomproductionae4.blob.core.windows.net comment=AI
-/ip/firewall/address-list add list=any address=ios.chat.openai.com comment=AI
-/ip/firewall/address-list add list=any address=android.api.openai.com comment=AI
-/ip/firewall/address-list add list=any address=openaiorg.azurewebsites.net comment=AI
-/ip/firewall/address-list add list=any address=openaiblog.com comment=AI
-/ip/firewall/address-list add list=any address=openai-public.s3.amazonaws.com comment=AI
-/ip/firewall/address-list add list=any address=chatgpt.live comment=AI
-/ip/firewall/address-list add list=any address=chat.openai.com.edgekey.net comment=AI
-/ip/firewall/address-list add list=any address=openaicom.azure-api.net comment=AI
-/ip/firewall/address-list add list=any address=chatgpt.livekit.cloud comment=AI
-/ip/firewall/address-list add list=any address=challenges.cloudflare.com comment=AI
-/ip/firewall/address-list add list=any address=meta.ai comment=AI
-
 
 
 /ip/firewall/address-list add list=any address=2.16.6.0/24
@@ -1547,4 +1508,3 @@
 /ip/firewall/address-list add list=any address=172.64.146.0/24
 /ip/firewall/address-list add list=any address=172.65.90.0/24
 /ip/firewall/address-list add list=any address=184.105.99.79
-/ip/firewall/address-list add list=any address=meta.ai

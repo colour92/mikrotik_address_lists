@@ -1,0 +1,222 @@
+external-controller: 0.0.0.0:9090
+external-ui: ui
+external-ui-url: https://github.com/Zephyruso/zashboard/releases/latest/download/dist.zip
+secret: 
+unified-delay: true
+log-level: info
+ipv6: false
+find-process-mode: off
+tcp-concurrent: true
+keep-alive-idle: 60
+keep-alive-interval: 30
+
+profile:
+  store-selected: true
+  store-fake-ip: false
+
+# ПРОВАЙДЕРЫ ПРАВИЛ
+rule-providers:
+  meta_ips:
+    type: http
+    behavior: ipcidr
+    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/facebook.yaml"
+    path: ./ruleset/meta_ips.yaml
+    interval: 86400
+    health-check:
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 600
+    download-timeout: 30
+
+  telegram_ips:
+    type: http
+    behavior: classical
+    url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Telegram/Telegram.yaml"
+    path: ./ruleset/telegram.yaml
+    interval: 86400
+    health-check:
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 600
+    download-timeout: 30
+
+  youtube_ips:
+    type: http
+    behavior: classical
+    url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/YouTube/YouTube.yaml"
+    path: ./ruleset/youtube.yaml
+    interval: 43200
+    health-check:
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 600
+    download-timeout: 30
+
+# DNS НАСТРОЙКИ (совместимые с MikroTik)
+dns:
+  enable: true
+  use-system-hosts: true
+  
+  # Основные DNS серверы (те же, что используются в MikroTik)
+  nameserver:
+    - 'tls://1.1.1.1'  # Cloudflare
+    - 'tls://8.8.8.8'  # Google
+    - 'system'         # Системные DNS из MikroTik
+  
+  # Fallback для блокированных сервисов
+  fallback:
+    - 'https://1.1.1.1/dns-query'  # Cloudflare DoH
+    - 'tls://1.0.0.1'
+  
+  fallback-filter:
+    geoip: true
+    geoip-code: RU  # Измените на вашу страну
+    ipcidr:
+      - 0.0.0.0/8
+      - 10.0.0.0/8
+      - 100.64.0.0/10
+      - 127.0.0.0/8
+      - 169.254.0.0/16
+      - 172.16.0.0/12
+      - 192.0.0.0/24
+      - 192.0.2.0/24
+      - 192.168.0.0/16
+      - 198.18.0.0/15
+      - 198.51.100.0/24
+      - 203.0.113.0/24
+      - 224.0.0.0/4
+      - 240.0.0.0/4
+      - 255.255.255.255/32
+
+proxy-providers:
+  AWG:
+    type: file
+    path: "/etc/mihomo/awg.yaml"
+    health-check:
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 300
+      timeout: 5000
+      lazy: true
+      expected-status: 204
+  SUB1_TEST:
+    type: http
+    url: "тарам парам 1"
+    interval: 3600
+    health-check:
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 300
+      timeout: 5000
+      lazy: true
+      expected-status: 204
+    header:
+      x-hwid:
+      - db5bc658993049afba8e3881780cd4f6
+  SUB2_TEST:
+    type: http
+    url: "тарам парам 2"
+    interval: 3600
+    health-check:
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 300
+      timeout: 5000
+      lazy: true
+      expected-status: 204
+    header:
+      x-hwid:
+      - db5bc658993049afba8e3881780cd4f6
+
+
+# ПРОКСИ-ГРУППЫ
+proxy-groups:
+  # Основная группа для автоматического выбора
+  - name: 🚀 AUTO-SELECT
+    type: url-test
+    use:
+      - AWG
+      - SUB1_TEST
+      - SUB2_TEST
+
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 150
+    lazy: true
+  
+  # Сервисные группы (для ручного выбора в UI)
+  - name: 🟢 WhatsApp
+    type: select
+    proxies:
+      - 🚀 AUTO-SELECT
+      - DIRECT
+  
+  - name: 📸 Instagram
+    type: select
+    proxies:
+      - 🚀 AUTO-SELECT
+      - DIRECT
+  
+  - name: 📮 Telegram
+    type: select
+    proxies:
+      - 🚀 AUTO-SELECT
+      - DIRECT
+  
+  - name: ▶️ YouTube
+    type: select
+    proxies:
+      - 🚀 AUTO-SELECT
+      - DIRECT
+  
+  # Техническая группа
+  - name: QUIC UDP 443
+    type: select
+    proxies:
+      - PASS
+      - REJECT
+
+# LISTENERS (ВАЖНО: TUN без авто-маршрутизации!)
+listeners:
+  - name: mixed-in
+    type: mixed
+    port: 1080
+  
+  # TUN интерфейс БЕЗ авто-маршрутизации
+  - name: tun-in
+    type: tun
+    stack: system
+    auto-detect-interface: true
+    auto-route: true          # ОТКЛЮЧЕНО!
+    auto-redirect: true       # ОТКЛЮЧЕНО!
+    inet4-address:
+      - 198.19.0.1/30
+
+# ПРАВИЛА МАРШРУТИЗАЦИИ
+rules:
+  # 1. Локальные сети (высший приоритет)
+  - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+  - IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+  - IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+  
+  # 2. Сетевые адреса контейнера и MikroTik
+  - IP-CIDR,192.168.254.0/24,DIRECT,no-resolve
+  
+  # 3. Географическая маршрутизация (локальные страны)
+  - GEOIP,RU,DIRECT        # Россия
+  - GEOIP,UA,DIRECT        # Украина
+  - GEOIP,BY,DIRECT        # Беларусь
+  - GEOIP,KZ,DIRECT        # Казахстан
+  
+  # 4. Основные сервисы через RULE-SET
+  - RULE-SET,meta_ips,🟢 WhatsApp,no-resolve
+  - RULE-SET,telegram_ips,📮 Telegram
+  - RULE-SET,youtube_ips,▶️ YouTube
+  
+  # 5. Оригинальные технические правила
+  - AND,((NETWORK,udp),(DST-PORT,443)),QUIC UDP 443
+  - IN-NAME,tun-in,🚀 AUTO-SELECT
+  - IN-NAME,mixed-in,🚀 AUTO-SELECT
+  
+  # 6. Финальное правило (только для трафика, дошедшего до Clash)
+  - MATCH,🚀 AUTO-SELECT

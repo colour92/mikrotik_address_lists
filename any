@@ -279,6 +279,48 @@
 /ip/firewall/address-list add list=any address=99.84.0.0/16 comment=Speedtest
 /ip/firewall/address-list add list=any address=104.64.0.0/10 comment=Speedtest
 
+/ip/firewall/address-list add list=any address=reddit.com comment=Reddit
+/ip/firewall/address-list add list=any address=www.reddit.com comment=Reddit
+/ip/firewall/address-list add list=any address=old.reddit.com comment=Reddit
+/ip/firewall/address-list add list=any address=new.reddit.com comment=Reddit
+/ip/firewall/address-list add list=any address=m.reddit.com comment=Reddit
+/ip/firewall/address-list add list=any address=oauth.reddit.com comment=Reddit
+/ip/firewall/address-list add list=any address=gateway.reddit.com comment=Reddit
+/ip/firewall/address-list add list=any address=events.reddit.com comment=Reddit
+/ip/firewall/address-list add list=any address=ads-api.reddit.com comment=Reddit
+/ip/firewall/address-list add list=any address=business.reddit.com comment=Reddit
+/ip/firewall/address-list add list=any address=gql-fed.reddit.com comment=Reddit
+/ip/firewall/address-list add list=any address=redditstatic.com comment=Reddit
+/ip/firewall/address-list add list=any address=www.redditstatic.com comment=Reddit
+/ip/firewall/address-list add list=any address=redd.it comment=Reddit
+/ip/firewall/address-list add list=any address=v.redd.it comment=Reddit
+/ip/firewall/address-list add list=any address=i.redd.it comment=Reddit
+/ip/firewall/address-list add list=any address=151.101.0.0/22 comment=Reddit
+/ip/firewall/address-list add list=any address=151.101.4.0/22 comment=Reddit
+/ip/firewall/address-list add list=any address=151.101.8.0/22 comment=Reddit
+/ip/firewall/address-list add list=any address=151.101.12.0/22 comment=Reddit
+/ip/firewall/address-list add list=any address=151.101.16.0/22 comment=Reddit
+/ip/firewall/address-list add list=any address=151.101.20.0/22 comment=Reddit
+/ip/firewall/address-list add list=any address=151.101.24.0/22 comment=Reddit
+/ip/firewall/address-list add list=any address=151.101.28.0/22 comment=Reddit
+/ip/firewall/address-list add list=any address=151.101.32.0/22 comment=Reddit
+/ip/firewall/address-list add list=any address=151.101.36.0/22 comment=Reddit
+/ip/firewall/address-list add list=any address=151.101.40.0/22 comment=Reddit
+/ip/firewall/address-list add list=any address=151.101.44.0/22 comment=Reddit
+/ip/firewall/address-list add list=any address=151.101.48.0/22 comment=Reddit
+/ip/firewall/address-list add list=any address=151.101.52.0/22 comment=Reddit
+/ip/firewall/address-list add list=any address=151.101.56.0/22 comment=Reddit
+/ip/firewall/address-list add list=any address=151.101.60.0/22 comment=Reddit
+/ip/firewall/address-list add list=any address=199.232.0.0/21 comment=Reddit
+/ip/firewall/address-list add list=any address=199.232.8.0/21 comment=Reddit
+/ip/firewall/address-list add list=any address=199.232.16.0/21 comment=Reddit
+/ip/firewall/address-list add list=any address=199.232.24.0/21 comment=Reddit
+/ip/firewall/address-list add list=any address=199.232.32.0/21 comment=Reddit
+/ip/firewall/address-list add list=any address=199.232.40.0/21 comment=Reddit
+/ip/firewall/address-list add list=any address=199.232.48.0/21 comment=Reddit
+/ip/firewall/address-list add list=any address=199.232.56.0/21 comment=Reddit
+/ip/firewall/address-list add list=any address=23.235.32.0/20 comment=Reddit
+
 /ip/firewall/address-list add list=any address=twitter.com
 /ip/firewall/address-list add list=any address=x.com
 /ip/firewall/address-list add list=any address=twimg.com

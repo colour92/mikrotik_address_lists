@@ -278,6 +278,23 @@
 /ip/firewall/address-list add list=any address=54.64.0.0/10 comment=Speedtest
 /ip/firewall/address-list add list=any address=99.84.0.0/16 comment=Speedtest
 /ip/firewall/address-list add list=any address=104.64.0.0/10 comment=Speedtest
+/ip/firewall/address-list add list=any address=speedtestcustom.com comment=Speedtest
+/ip/firewall/address-list add list=any address=www.speedtestcustom.com comment=Speedtest
+/ip/firewall/address-list add list=any address=cli.speedtest.net comment=Speedtest
+/ip/firewall/address-list add list=any address=fast.com comment=Speedtest
+/ip/firewall/address-list add list=any address=www.fast.com comment=Speedtest
+/ip/firewall/address-list add list=any address=speed.cloudflare.com comment=Speedtest
+/ip/firewall/address-list add list=any address=measurementlab.net comment=Speedtest
+/ip/firewall/address-list add list=any address=www.measurementlab.net comment=Speedtest
+/ip/firewall/address-list add list=any address=speed.measurementlab.net comment=Speedtest
+/ip/firewall/address-list add list=any address=mlab-oti.measurementlab.net comment=Speedtest
+/ip/firewall/address-list add list=any address=speedtest.googlefiber.net comment=Speedtest
+/ip/firewall/address-list add list=any address=nperf.com comment=Speedtest
+/ip/firewall/address-list add list=any address=www.nperf.com comment=Speedtest
+/ip/firewall/address-list add list=any address=openspeedtest.com comment=Speedtest
+/ip/firewall/address-list add list=any address=www.openspeedtest.com comment=Speedtest
+/ip/firewall/address-list add list=any address=speedof.me comment=Speedtest
+/ip/firewall/address-list add list=any address=www.speedof.me comment=Speedtest
 
 /ip/firewall/address-list add list=any address=reddit.com comment=Reddit
 /ip/firewall/address-list add list=any address=www.reddit.com comment=Reddit

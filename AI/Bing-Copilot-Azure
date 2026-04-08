@@ -1,6 +1,0 @@
-/ip/firewall/address-list add list=any address=copilot.microsoft.com
-/ip/firewall/address-list add list=any address=bing.com
-/ip/firewall/address-list add list=any address=sydney.bing.com
-/ip/firewall/address-list add list=any address=api.bing.microsoft.com
-/ip/firewall/address-list add list=any address=azureopenai.microsoft.com
-/ip/firewall/address-list add list=any address=openai.azure.com

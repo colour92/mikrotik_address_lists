@@ -1,0 +1,6 @@
+/ip/firewall/address-list add list=any address=anthropic.com
+/ip/firewall/address-list add list=any address=www.anthropic.com
+/ip/firewall/address-list add list=any address=api.anthropic.com
+/ip/firewall/address-list add list=any address=claude.ai
+/ip/firewall/address-list add list=any address=www.claude.ai
+/ip/firewall/address-list add list=any address=console.anthropic.com

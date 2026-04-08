@@ -1,6 +1,0 @@
-/ip/firewall/address-list add list=any address=notion-static.com comment=notion
-/ip/firewall/address-list add list=any address=notion.com comment=notion
-/ip/firewall/address-list add list=any address=notion.new comment=notion
-/ip/firewall/address-list add list=any address=notion.site comment=notion
-/ip/firewall/address-list add list=any address=notion.so comment=notion
-/ip/firewall/address-list add list=any address=notionusercontent.com comment=notion

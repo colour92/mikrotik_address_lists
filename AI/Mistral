@@ -1,0 +1,7 @@
+/ip/firewall/address-list add list=any address=download.mistral.ai
+/ip/firewall/address-list add list=any address=auth.mistral.ai
+/ip/firewall/address-list add list=any address=docs.mistral.ai
+/ip/firewall/address-list add list=any address=mistral.ai
+/ip/firewall/address-list add list=any address=www.mistral.ai
+/ip/firewall/address-list add list=any address=api.mistral.ai
+/ip/firewall/address-list add list=any address=console.mistral.ai

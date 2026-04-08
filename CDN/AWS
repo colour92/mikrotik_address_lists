@@ -1,0 +1,14 @@
+/ip/firewall/address-list add list=cdn address=amazonaws.com comment=aws
+/ip/firewall/address-list add list=cdn address=cloudfront.net comment=aws
+/ip/firewall/address-list add list=cdn address=s3.amazonaws.com comment=aws
+/ip/firewall/address-list add list=cdn address=execute-api.amazonaws.com comment=aws
+
+/ip/firewall/address-list add list=cdn address=3.0.0.0/8 comment=aws
+/ip/firewall/address-list add list=cdn address=13.0.0.0/8 comment=aws
+/ip/firewall/address-list add list=cdn address=15.0.0.0/7 comment=aws
+/ip/firewall/address-list add list=cdn address=18.0.0.0/8 comment=aws
+/ip/firewall/address-list add list=cdn address=52.0.0.0/8 comment=aws
+/ip/firewall/address-list add list=cdn address=54.0.0.0/8 comment=aws
+/ip/firewall/address-list add list=cdn address=205.251.249.0/24 comment=aws
+/ip/firewall/address-list add list=cdn address=205.251.250.0/23 comment=aws
+/ip/firewall/address-list add list=cdn address=205.251.252.0/23 comment=aws

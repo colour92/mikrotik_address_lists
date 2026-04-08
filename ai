@@ -7,14 +7,12 @@
 /ip/firewall/address-list add list=ai address=modelgarden.googleapis.com comment="Gemini"
 /ip/firewall/address-list add list=ai address=ml.googleapis.com comment="Gemini"
 /ip/firewall/address-list add list=ai address=notebooks.googleapis.com comment="Gemini"
-
 /ip/firewall/address-list add list=ai address=api.gemini.google.com comment="Gemini"
 /ip/firewall/address-list add list=ai address=gemini.google.com comment="Gemini"
 /ip/firewall/address-list add list=ai address=bard.google.com comment="Gemini"
 /ip/firewall/address-list add list=ai address=ai.google.dev comment="Gemini"
 /ip/firewall/address-list add list=ai address=makersuite.google.com comment="Gemini"
 /ip/firewall/address-list add list=ai address=aistudio.google.com comment="Gemini"
-
 /ip/firewall/address-list add list=ai address=oauth2.googleapis.com comment="Gemini"
 /ip/firewall/address-list add list=ai address=openidconnect.googleapis.com comment="Gemini"
 /ip/firewall/address-list add list=ai address=sts.googleapis.com comment="Gemini"
@@ -24,11 +22,9 @@
 /ip/firewall/address-list add list=ai address=cloudresourcemanager.googleapis.com comment="Gemini"
 /ip/firewall/address-list add list=ai address=identitytoolkit.googleapis.com comment="Gemini"
 /ip/firewall/address-list add list=ai address=securetoken.googleapis.com comment="Gemini"
-
 /ip/firewall/address-list add list=ai address=logging.googleapis.com comment="Gemini"
 /ip/firewall/address-list add list=ai address=monitoring.googleapis.com comment="Gemini"
 /ip/firewall/address-list add list=ai address=cloudtrace.googleapis.com comment="Gemini"
-
 /ip/firewall/address-list add list=ai address=translate.googleapis.com comment="Gemini"
 /ip/firewall/address-list add list=ai address=speech.googleapis.com comment="Gemini"
 /ip/firewall/address-list add list=ai address=texttospeech.googleapis.com comment="Gemini"
@@ -36,7 +32,6 @@
 /ip/firewall/address-list add list=ai address=videointelligence.googleapis.com comment="Gemini"
 /ip/firewall/address-list add list=ai address=language.googleapis.com comment="Gemini"
 /ip/firewall/address-list add list=ai address=dlp.googleapis.com comment="Gemini"
-
 /ip/firewall/address-list add list=ai address=storage.googleapis.com comment="Gemini"
 /ip/firewall/address-list add list=ai address=storage.cloud.google.com comment="Gemini"
 /ip/firewall/address-list add list=ai address=content.googleapis.com comment="Gemini"

@@ -1,7 +1,0 @@
-/ip/firewall/address-list add list=any address=discord.com comment=Discord
-/ip/firewall/address-list add list=any address=discord.gg comment=Discord
-/ip/firewall/address-list add list=any address=discordapp.com comment=Discord
-/ip/firewall/address-list add list=any address=discordapp.net comment=Discord
-/ip/firewall/address-list add list=any address=cdn.discordapp.com comment=Discord
-/ip/firewall/address-list add list=any address=media.discordapp.net comment=Discord
-/ip/firewall/address-list add list=any address=gateway.discord.gg comment=Discord

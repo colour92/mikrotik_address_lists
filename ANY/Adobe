@@ -1,6 +1,0 @@
-/ip/firewall/address-list add list=any address=adobe.com comment=Adobe
-/ip/firewall/address-list add list=any address=adobelogin.com comment=Adobe
-/ip/firewall/address-list add list=any address=adobe.io comment=Adobe
-/ip/firewall/address-list add list=any address=behance.net comment=Adobe
-/ip/firewall/address-list add list=any address=creativecloud.adobe.com comment=Adobe
-/ip/firewall/address-list add list=any address=cc-api-data.adobe.io comment=Adobe

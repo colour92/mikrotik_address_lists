@@ -1,0 +1,9 @@
+/ip/firewall/address-list add list=cdn address=fastly.com comment=fastly
+/ip/firewall/address-list add list=cdn address=fastly.net comment=fastly
+/ip/firewall/address-list add list=cdn address=fastlylb.net comment=fastly
+
+/ip/firewall/address-list add list=cdn address=151.101.0.0/16 comment=fastly
+/ip/firewall/address-list add list=cdn address=146.75.0.0/16 comment=fastly
+/ip/firewall/address-list add list=cdn address=199.232.0.0/16 comment=fastly
+/ip/firewall/address-list add list=cdn address=23.235.32.0/20 comment=fastly
+/ip/firewall/address-list add list=cdn address=43.249.72.0/22 comment=fastly

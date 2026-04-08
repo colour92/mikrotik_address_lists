@@ -1,6 +1,0 @@
-/ip/firewall/address-list add list=any address=twitch.tv comment=Twitch
-/ip/firewall/address-list add list=any address=www.twitch.tv comment=Twitch
-/ip/firewall/address-list add list=any address=api.twitch.tv comment=Twitch
-/ip/firewall/address-list add list=any address=ttvnw.net comment=Twitch
-/ip/firewall/address-list add list=any address=jtvnw.net comment=Twitch
-/ip/firewall/address-list add list=any address=static.twitchcdn.net comment=Twitch

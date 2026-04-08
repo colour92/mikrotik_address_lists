@@ -1,4 +1,0 @@
-/ip/firewall/address-list add list=any address=twitter.com comment=Twitter
-/ip/firewall/address-list add list=any address=twimg.com comment=Twitter
-/ip/firewall/address-list add list=any address=video.twimg.com comment=Twitter
-/ip/firewall/address-list add list=any address=api.twitter.com comment=Twitter

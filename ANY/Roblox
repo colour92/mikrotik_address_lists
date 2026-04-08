@@ -1,0 +1,6 @@
+/ip/firewall/address-list add list=any address=roblox.com
+/ip/firewall/address-list add list=any address=www.roblox.com
+/ip/firewall/address-list add list=any address=rbxcdn.com
+/ip/firewall/address-list add list=any address=rbx.com
+/ip/firewall/address-list add list=any address=setup.rbxcdn.com
+/ip/firewall/address-list add list=any address=assetgame.roblox.com

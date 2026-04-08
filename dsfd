@@ -1,0 +1,129 @@
+Google / Gemini / Vertex AI
+/ip/firewall/address-list add list=any address=generativelanguage.googleapis.com
+/ip/firewall/address-list add list=any address=vertexai.googleapis.com
+/ip/firewall/address-list add list=any address=aiplatform.googleapis.com
+/ip/firewall/address-list add list=any address=us-central1-aiplatform.googleapis.com
+/ip/firewall/address-list add list=any address=europe-west4-aiplatform.googleapis.com
+/ip/firewall/address-list add list=any address=oauth2.googleapis.com
+/ip/firewall/address-list add list=any address=accounts.google.com
+/ip/firewall/address-list add list=any address=storage.googleapis.com
+/ip/firewall/address-list add list=any address=api.gemini.google.com
+/ip/firewall/address-list add list=any address=modelgarden.googleapis.com
+/ip/firewall/address-list add list=any address=ai.google.dev
+/ip/firewall/address-list add list=any address=gemini.google.com
+/ip/firewall/address-list add list=any address=generativeai.googleapis.com
+/ip/firewall/address-list add list=any address=bard.google.com
+/ip/firewall/address-list add list=any address=makersuite.google.com
+/ip/firewall/address-list add list=any address=aistudio.google.com
+
+OpenAI
+/ip/firewall/address-list add list=any address=openai.com
+/ip/firewall/address-list add list=any address=www.openai.com
+/ip/firewall/address-list add list=any address=chat.openai.com
+/ip/firewall/address-list add list=any address=chatgpt.com
+/ip/firewall/address-list add list=any address=www.chatgpt.com
+/ip/firewall/address-list add list=any address=api.openai.com
+/ip/firewall/address-list add list=any address=platform.openai.com
+/ip/firewall/address-list add list=any address=auth.openai.com
+/ip/firewall/address-list add list=any address=auth0.openai.com
+/ip/firewall/address-list add list=any address=oauth-api.openai.com
+/ip/firewall/address-list add list=any address=cdn.openai.com
+/ip/firewall/address-list add list=any address=oaistatic.com
+/ip/firewall/address-list add list=any address=oaiusercontent.com
+/ip/firewall/address-list add list=any address=files.oaiusercontent.com
+/ip/firewall/address-list add list=any address=files.openai.com
+/ip/firewall/address-list add list=any address=uploads.openai.com
+/ip/firewall/address-list add list=any address=images.openai.com
+/ip/firewall/address-list add list=any address=ios.chat.openai.com
+/ip/firewall/address-list add list=any address=android.api.openai.com
+/ip/firewall/address-list add list=any address=openaiapi-site.azureedge.net
+/ip/firewall/address-list add list=any address=openaicom.azure-api.net
+/ip/firewall/address-list add list=any address=chat.openai.com.edgekey.net
+/ip/firewall/address-list add list=any address=openai-public.s3.amazonaws.com
+/ip/firewall/address-list add list=any address=openaicomproductionae4.blob.core.windows.net
+/ip/firewall/address-list add list=any address=oaidalleapiprodscus.blob.core.windows.net
+/ip/firewall/address-list add list=any address=openaiapi.com
+
+Anthropic
+/ip/firewall/address-list add list=any address=anthropic.com
+/ip/firewall/address-list add list=any address=www.anthropic.com
+/ip/firewall/address-list add list=any address=api.anthropic.com
+/ip/firewall/address-list add list=any address=claude.ai
+/ip/firewall/address-list add list=any address=www.claude.ai
+/ip/firewall/address-list add list=any address=console.anthropic.com
+
+Microsoft / Bing / Copilot / Azure OpenAI
+/ip/firewall/address-list add list=any address=copilot.microsoft.com
+/ip/firewall/address-list add list=any address=bing.com
+/ip/firewall/address-list add list=any address=sydney.bing.com
+/ip/firewall/address-list add list=any address=api.bing.microsoft.com
+/ip/firewall/address-list add list=any address=azureopenai.microsoft.com
+/ip/firewall/address-list add list=any address=openai.azure.com
+
+Meta AI
+/ip/firewall/address-list add list=any address=meta.ai
+/ip/firewall/address-list add list=any address=www.meta.ai
+🔷 Mistral AI
+/ip/firewall/address-list add list=any address=mistral.ai
+/ip/firewall/address-list add list=any address=www.mistral.ai
+/ip/firewall/address-list add list=any address=api.mistral.ai
+/ip/firewall/address-list add list=any address=console.mistral.ai
+/ip/firewall/address-list add list=any address=download.mistral.ai
+/ip/firewall/address-list add list=any address=auth.mistral.ai
+/ip/firewall/address-list add list=any address=docs.mistral.ai
+🔷 Perplexity
+/ip/firewall/address-list add list=any address=perplexity.ai
+/ip/firewall/address-list add list=any address=www.perplexity.ai
+/ip/firewall/address-list add list=any address=api.perplexity.ai
+🔷 Hugging Face
+/ip/firewall/address-list add list=any address=huggingface.co
+/ip/firewall/address-list add list=any address=www.huggingface.co
+/ip/firewall/address-list add list=any address=api-inference.huggingface.co
+/ip/firewall/address-list add list=any address=inference.huggingface.co
+🔷 Stability AI
+/ip/firewall/address-list add list=any address=stability.ai
+/ip/firewall/address-list add list=any address=www.stability.ai
+/ip/firewall/address-list add list=any address=api.stability.ai
+🔷 Replicate
+/ip/firewall/address-list add list=any address=replicate.com
+/ip/firewall/address-list add list=any address=www.replicate.com
+/ip/firewall/address-list add list=any address=api.replicate.com
+🔷 Cohere
+/ip/firewall/address-list add list=any address=cohere.ai
+/ip/firewall/address-list add list=any address=www.cohere.ai
+/ip/firewall/address-list add list=any address=api.cohere.ai
+🔷 ElevenLabs
+/ip/firewall/address-list add list=any address=elevenlabs.io
+/ip/firewall/address-list add list=any address=www.elevenlabs.io
+/ip/firewall/address-list add list=any address=api.elevenlabs.io
+🔷 DeepL
+/ip/firewall/address-list add list=any address=deepl.com
+/ip/firewall/address-list add list=any address=www.deepl.com
+/ip/firewall/address-list add list=any address=api.deepl.com
+🔷 OpenRouter
+/ip/firewall/address-list add list=any address=openrouter.ai
+/ip/firewall/address-list add list=any address=www.openrouter.ai
+🔷 Midjourney
+/ip/firewall/address-list add list=any address=midjourney.com
+/ip/firewall/address-list add list=any address=www.midjourney.com
+/ip/firewall/address-list add list=any address=niji.journey.com
+🔷 Runway / Leonardo / Playground
+/ip/firewall/address-list add list=any address=runwayml.com
+/ip/firewall/address-list add list=any address=app.runwayml.com
+/ip/firewall/address-list add list=any address=leonardo.ai
+/ip/firewall/address-list add list=any address=www.leonardo.ai
+/ip/firewall/address-list add list=any address=playgroundai.com
+🔷 Speech / Audio AI
+/ip/firewall/address-list add list=any address=deepgram.com
+/ip/firewall/address-list add list=any address=api.deepgram.com
+/ip/firewall/address-list add list=any address=assemblyai.com
+/ip/firewall/address-list add list=any address=api.assemblyai.com
+🔷 LLM инфраструктура / API
+/ip/firewall/address-list add list=any address=together.ai
+/ip/firewall/address-list add list=any address=api.together.xyz
+/ip/firewall/address-list add list=any address=anyscale.com
+/ip/firewall/address-list add list=any address=api.endpoints.anyscale.com
+/ip/firewall/address-list add list=any address=fireworks.ai
+/ip/firewall/address-list add list=any address=api.fireworks.ai
+/ip/firewall/address-list add list=any address=groq.com
+/ip/firewall/address-list add list=any address=api.groq.com

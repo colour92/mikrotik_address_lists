@@ -1,0 +1,8 @@
+/ip/firewall/address-list add list=cdn address=oraclecloud.com comment=oracle
+/ip/firewall/address-list add list=cdn address=oci.oraclecloud.com comment=oracle
+/ip/firewall/address-list add list=cdn address=129.146.0.0/16 comment=oracle
+/ip/firewall/address-list add list=cdn address=130.35.0.0/16 comment=oracle
+/ip/firewall/address-list add list=cdn address=138.1.0.0/16 comment=oracle
+/ip/firewall/address-list add list=cdn address=140.204.0.0/16 comment=oracle
+/ip/firewall/address-list add list=cdn address=147.154.0.0/16 comment=oracle
+/ip/firewall/address-list add list=cdn address=192.29.0.0/16 comment=oracle

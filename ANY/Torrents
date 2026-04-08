@@ -1,0 +1,6 @@
+/ip/firewall/address-list add list=any address=opentrackr.org comment=Torrents
+/ip/firewall/address-list add list=any address=openbittorrent.com comment=Torrents
+/ip/firewall/address-list add list=any address=tracker.opentrackr.org comment=Torrents
+/ip/firewall/address-list add list=any address=tracker.openbittorrent.com comment=Torrents
+/ip/firewall/address-list add list=any address=tracker.torrent.eu.org comment=Torrents
+/ip/firewall/address-list add list=any address=tracker.moeking.me comment=Torrents

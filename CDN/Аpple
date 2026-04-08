@@ -22,3 +22,11 @@
 /ip/firewall/address-list add list=cdn address=17.104.0.0/13 comment=apple
 /ip/firewall/address-list add list=cdn address=17.112.0.0/12 comment=apple
 /ip/firewall/address-list add list=cdn address=17.128.0.0/9 comment=apple
+
+
+/ip/firewall/address-list add list=any address=opentrackr.org
+/ip/firewall/address-list add list=any address=openbittorrent.com
+/ip/firewall/address-list add list=any address=tracker.opentrackr.org
+/ip/firewall/address-list add list=any address=tracker.openbittorrent.com
+/ip/firewall/address-list add list=any address=tracker.torrent.eu.org
+/ip/firewall/address-list add list=any address=tracker.moeking.me

@@ -1,3 +1,0 @@
-/ip/firewall/address-list add list=any address=statsig.com comment=analytics
-/ip/firewall/address-list add list=any address=segment.io comment=analytics
-/ip/firewall/address-list add list=any address=browser-intake-datadoghq.com comment=analytics

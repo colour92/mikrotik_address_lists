@@ -1,0 +1,5 @@
+/ip/firewall/address-list add list=any address=client-teamviewer-com.trafficmanager.net comment=teamviewer
+/ip/firewall/address-list add list=any address=teamviewer.com.cdn.cloudflare.net comment=teamviewer
+/ip/firewall/address-list add list=any address=teamviewer.cn comment=teamviewer
+/ip/firewall/address-list add list=any address=teamviewer.com comment=teamviewer
+/ip/firewall/address-list add list=any address=teamviewer.us comment=teamviewer

@@ -1,0 +1,5 @@
+/ip/firewall/address-list add list=any address=twitter.com
+/ip/firewall/address-list add list=any address=x.com
+/ip/firewall/address-list add list=any address=twimg.com
+/ip/firewall/address-list add list=any address=video.twimg.com
+/ip/firewall/address-list add list=any address=api.twitter.com

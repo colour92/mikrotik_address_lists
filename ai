@@ -14,6 +14,7 @@
 /ip/firewall/address-list add list=ai address=bard.google.com comment="Google / Gemini / Vertex AI"
 /ip/firewall/address-list add list=ai address=makersuite.google.com comment="Google / Gemini / Vertex AI"
 /ip/firewall/address-list add list=ai address=aistudio.google.com comment="Google / Gemini / Vertex AI"
+
 /ip/firewall/address-list add list=ai address=openai.com comment="OpenAI"
 /ip/firewall/address-list add list=ai address=www.openai.com comment="OpenAI"
 /ip/firewall/address-list add list=ai address=chat.openai.com comment="OpenAI"
@@ -40,20 +41,24 @@
 /ip/firewall/address-list add list=ai address=openaicomproductionae4.blob.core.windows.net comment="OpenAI"
 /ip/firewall/address-list add list=ai address=oaidalleapiprodscus.blob.core.windows.net comment="OpenAI"
 /ip/firewall/address-list add list=ai address=openaiapi.com comment="OpenAI"
+
 /ip/firewall/address-list add list=ai address=anthropic.com comment="Anthropic"
 /ip/firewall/address-list add list=ai address=www.anthropic.com comment="Anthropic"
 /ip/firewall/address-list add list=ai address=api.anthropic.com comment="Anthropic"
 /ip/firewall/address-list add list=ai address=claude.ai comment="Anthropic"
 /ip/firewall/address-list add list=ai address=www.claude.ai comment="Anthropic"
 /ip/firewall/address-list add list=ai address=console.anthropic.com comment="Anthropic"
+
 /ip/firewall/address-list add list=ai address=copilot.microsoft.com comment="Microsoft / Bing / Copilot / Azure OpenAI"
 /ip/firewall/address-list add list=ai address=bing.com comment="Microsoft / Bing / Copilot / Azure OpenAI"
 /ip/firewall/address-list add list=ai address=sydney.bing.com comment="Microsoft / Bing / Copilot / Azure OpenAI"
 /ip/firewall/address-list add list=ai address=api.bing.microsoft.com comment="Microsoft / Bing / Copilot / Azure OpenAI"
 /ip/firewall/address-list add list=ai address=azureopenai.microsoft.com comment="Microsoft / Bing / Copilot / Azure OpenAI"
 /ip/firewall/address-list add list=ai address=openai.azure.com comment="Microsoft / Bing / Copilot / Azure OpenAI"
+
 /ip/firewall/address-list add list=ai address=meta.ai comment="Meta AI"
 /ip/firewall/address-list add list=ai address=www.meta.ai comment="Meta AI"
+
 /ip/firewall/address-list add list=ai address=mistral.ai comment="Mistral AI"
 /ip/firewall/address-list add list=ai address=www.mistral.ai comment="Mistral AI"
 /ip/firewall/address-list add list=ai address=api.mistral.ai comment="Mistral AI"
@@ -61,42 +66,54 @@
 /ip/firewall/address-list add list=ai address=download.mistral.ai comment="Mistral AI"
 /ip/firewall/address-list add list=ai address=auth.mistral.ai comment="Mistral AI"
 /ip/firewall/address-list add list=ai address=docs.mistral.ai comment="Mistral AI"
+
 /ip/firewall/address-list add list=ai address=perplexity.ai comment="Perplexity"
 /ip/firewall/address-list add list=ai address=www.perplexity.ai comment="Perplexity"
 /ip/firewall/address-list add list=ai address=api.perplexity.ai comment="Perplexity"
+
 /ip/firewall/address-list add list=ai address=huggingface.co comment="Hugging Face"
 /ip/firewall/address-list add list=ai address=www.huggingface.co comment="Hugging Face"
 /ip/firewall/address-list add list=ai address=api-inference.huggingface.co comment="Hugging Face"
 /ip/firewall/address-list add list=ai address=inference.huggingface.co comment="Hugging Face"
+
 /ip/firewall/address-list add list=ai address=stability.ai comment="Stability AI"
 /ip/firewall/address-list add list=ai address=www.stability.ai comment="Stability AI"
 /ip/firewall/address-list add list=ai address=api.stability.ai comment="Stability AI"
+
 /ip/firewall/address-list add list=ai address=replicate.com comment="Replicate"
 /ip/firewall/address-list add list=ai address=www.replicate.com comment="Replicate"
 /ip/firewall/address-list add list=ai address=api.replicate.com comment="Replicate"
+
 /ip/firewall/address-list add list=ai address=cohere.ai comment="Cohere"
 /ip/firewall/address-list add list=ai address=www.cohere.ai comment="Cohere"
 /ip/firewall/address-list add list=ai address=api.cohere.ai comment="Cohere"
+
 /ip/firewall/address-list add list=ai address=elevenlabs.io comment="ElevenLabs"
 /ip/firewall/address-list add list=ai address=www.elevenlabs.io comment="ElevenLabs"
 /ip/firewall/address-list add list=ai address=api.elevenlabs.io comment="ElevenLabs"
+
 /ip/firewall/address-list add list=ai address=deepl.com comment="DeepL"
 /ip/firewall/address-list add list=ai address=www.deepl.com comment="DeepL"
 /ip/firewall/address-list add list=ai address=api.deepl.com comment="DeepL"
+
 /ip/firewall/address-list add list=ai address=openrouter.ai comment="OpenRouter"
 /ip/firewall/address-list add list=ai address=www.openrouter.ai comment="OpenRouter"
+
 /ip/firewall/address-list add list=ai address=midjourney.com comment="Midjourney"
 /ip/firewall/address-list add list=ai address=www.midjourney.com comment="Midjourney"
 /ip/firewall/address-list add list=ai address=niji.journey.com comment="Midjourney"
+
 /ip/firewall/address-list add list=ai address=runwayml.com comment="Runway / Leonardo / Playground"
 /ip/firewall/address-list add list=ai address=app.runwayml.com comment="Runway / Leonardo / Playground"
 /ip/firewall/address-list add list=ai address=leonardo.ai comment="Runway / Leonardo / Playground"
 /ip/firewall/address-list add list=ai address=www.leonardo.ai comment="Runway / Leonardo / Playground"
 /ip/firewall/address-list add list=ai address=playgroundai.com comment="Runway / Leonardo / Playground"
+
 /ip/firewall/address-list add list=ai address=deepgram.com comment="Speech / Audio AI"
 /ip/firewall/address-list add list=ai address=api.deepgram.com comment="Speech / Audio AI"
 /ip/firewall/address-list add list=ai address=assemblyai.com comment="Speech / Audio AI"
 /ip/firewall/address-list add list=ai address=api.assemblyai.com comment="Speech / Audio AI"
+
 /ip/firewall/address-list add list=ai address=together.ai comment="LLM инфраструктура / API"
 /ip/firewall/address-list add list=ai address=api.together.xyz comment="LLM инфраструктура / API"
 /ip/firewall/address-list add list=ai address=anyscale.com comment="LLM инфраструктура / API"

@@ -1,5 +1,3 @@
-/ip firewall address-list
-
 add list=allowed address=37signals.com comment=Other
 add list=allowed address=4pda.ru comment=Other
 add list=allowed address=4pda.to comment=Other
@@ -25,46 +23,6 @@ add list=allowed address=deezer.com comment=Music
 add list=allowed address=dzcdn.net comment=Music
 add list=allowed address=tidal.com comment=Music
 add list=allowed address=theaudiodb.com comment=Music
-
-# --- AI ---
-add list=allowed address=ai.com comment=AI
-add list=allowed address=ai.google.dev comment=AI
-add list=allowed address=aisandbox-pa.googleapis.com comment=AI
-add list=allowed address=aistudio.google.com comment=AI
-add list=allowed address=aitestkitchen.withgoogle.com comment=AI
-add list=allowed address=alkalicore-pa.clients6.google.com comment=AI
-add list=allowed address=alkalimakersuite-pa.clients6.google.com comment=AI
-add list=allowed address=anthropic.com comment=AI
-add list=allowed address=bard.google.com comment=AI
-add list=allowed address=chat.com comment=AI
-add list=allowed address=chatgpt.com comment=AI
-add list=allowed address=claude.ai comment=AI
-add list=allowed address=claudeusercontent.com comment=AI
-add list=allowed address=codeium.com comment=AI
-add list=allowed address=copilot.microsoft.com comment=AI
-add list=allowed address=designer.microsoft.com comment=AI
-add list=allowed address=designify.com comment=AI
-add list=allowed address=elevenlabs.io comment=AI
-add list=allowed address=elevenreader.io comment=AI
-add list=allowed address=gemini.google.com comment=AI
-add list=allowed address=generativelanguage.googleapis.com comment=AI
-add list=allowed address=gpt3-openai.com comment=AI
-add list=allowed address=grok.com comment=AI
-add list=allowed address=grok.x.com comment=AI
-add list=allowed address=jules.google comment=AI
-add list=allowed address=jules.google.com comment=AI
-add list=allowed address=kaleido.ai comment=AI
-add list=allowed address=labs.google comment=AI
-add list=allowed address=labs.google.com comment=AI
-add list=allowed address=meta.ai comment=AI
-add list=allowed address=notebooklm.google comment=AI
-add list=allowed address=notebooklm.google.com comment=AI
-add list=allowed address=notion.ai comment=AI
-add list=allowed address=preview.reve.art comment=AI
-add list=allowed address=remove.bg comment=AI
-add list=allowed address=sora.com comment=AI
-add list=allowed address=windsurf.com comment=AI
-add list=allowed address=x.ai comment=AI
 
 # --- Adobe ---
 add list=allowed address=adobe-identity.com comment=Adobe
@@ -112,16 +70,6 @@ add list=allowed address=nflxsearch.net comment=Video
 add list=allowed address=nflxso.net comment=Video
 add list=allowed address=nflxvideo.net comment=Video
 
-# --- Google / API ---
-add list=allowed address=apis.google.com comment=Google
-add list=allowed address=assistant-s3-pa.googleapis.com comment=Google
-add list=allowed address=fitbit-pa.googleapis.com comment=Google
-add list=allowed address=fitbit.google.com comment=Google
-add list=allowed address=fitbitvestibuleshim-pa.googleapis.com comment=Google
-add list=allowed address=lookerstudio.google.com comment=Google
-add list=allowed address=people-pa.clients6.google.com comment=Google
-add list=allowed address=suggestqueries.google.com comment=Google
-add list=allowed address=o.pki.goog comment=Google
 
 # --- IT / Vendors ---
 add list=allowed address=amazonaws.com comment=IT

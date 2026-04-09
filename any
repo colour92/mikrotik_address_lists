@@ -431,6 +431,8 @@
 /ip/firewall/address-list add list=any address=rbx.com comment=Roblox
 /ip/firewall/address-list add list=any address=setup.rbxcdn.com comment=Roblox
 /ip/firewall/address-list add list=any address=assetgame.roblox.com comment=Roblox
+/ip/firewall/address-list add list=any address=robloxdev.com comment=Roblox
+/ip/firewall/address-list add list=any address=rbxinfra.net comment=Roblox
 
 /ip/firewall/address-list add list=any address=slack-core.com comment=Slack
 /ip/firewall/address-list add list=any address=slack-edge.com comment=Slack

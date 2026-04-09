@@ -49,6 +49,16 @@
 /ip/firewall/address-list add list=any address=doubleclick.net comment="Google"
 /ip/firewall/address-list add list=any address=lh3.googleusercontent.com comment="Google"
 /ip/firewall/address-list add list=any address=fonts.googleapis.com comment="Google"
+/ip/firewall/address-list add list=any address=aisandbox-pa.googleapis.com comment="Google"
+/ip/firewall/address-list add list=any address=aitestkitchen.withgoogle.com comment="Google"
+/ip/firewall/address-list add list=any address=alkalicore-pa.clients6.google.com comment="Google"
+/ip/firewall/address-list add list=any address=alkalimakersuite-pa.clients6.google.com comment="Google"
+/ip/firewall/address-list add list=any address=jules.google comment="Google"
+/ip/firewall/address-list add list=any address=jules.google.com comment="Google"
+/ip/firewall/address-list add list=any address=labs.google comment="Google"
+/ip/firewall/address-list add list=any address=labs.google.com comment="Google"
+/ip/firewall/address-list add list=any address=notebooklm.google comment="Google"
+/ip/firewall/address-list add list=any address=notebooklm.google.com comment="Google"
 
 /ip/firewall/address-list add list=any address=openai.com comment="OpenAI"
 /ip/firewall/address-list add list=any address=chat.openai.com comment="OpenAI"
@@ -62,9 +72,11 @@
 /ip/firewall/address-list add list=any address=openaicom.azure-api.net comment="OpenAI"
 /ip/firewall/address-list add list=any address=openai-public.s3.amazonaws.com comment="OpenAI"
 /ip/firewall/address-list add list=any address=openaiapi.com comment="OpenAI"
+/ip/firewall/address-list add list=any address=gpt3-openai.com comment="OpenAI"
 
 /ip/firewall/address-list add list=any address=anthropic.com comment="Anthropic"
 /ip/firewall/address-list add list=any address=claude.ai comment="Anthropic"
+/ip/firewall/address-list add list=any address=claudeusercontent.com comment="Anthropic"
 /ip/firewall/address-list add list=any address=console.anthropic.com comment="Anthropic"
 
 /ip/firewall/address-list add list=any address=bing.com comment="Microsoft"
@@ -73,6 +85,7 @@
 /ip/firewall/address-list add list=any address=azureopenai.microsoft.com comment="Microsoft"
 /ip/firewall/address-list add list=any address=openai.azure.com comment="Microsoft"
 /ip/firewall/address-list add list=any address=copilot.microsoft.com comment="Microsoft"
+/ip/firewall/address-list add list=any address=designer.microsoft.com comment="Microsoft"
 
 /ip/firewall/address-list add list=any address=meta.ai comment="Meta"
 
@@ -101,6 +114,7 @@
 
 /ip/firewall/address-list add list=any address=elevenlabs.io comment="ElevenLabs"
 /ip/firewall/address-list add list=any address=api.elevenlabs.io comment="ElevenLabs"
+/ip/firewall/address-list add list=any address=elevenreader.io comment="ElevenLabs"
 
 /ip/firewall/address-list add list=any address=deepl.com comment="DeepL"
 /ip/firewall/address-list add list=any address=api.deepl.com comment="DeepL"
@@ -127,3 +141,17 @@
 /ip/firewall/address-list add list=any address=api.fireworks.ai comment="LLM"
 /ip/firewall/address-list add list=any address=groq.com comment="LLM"
 /ip/firewall/address-list add list=any address=api.groq.com comment="LLM"
+
+/ip/firewall/address-list add list=any address=ai.com comment="AI"
+/ip/firewall/address-list add list=any address=chat.com comment="AI"
+/ip/firewall/address-list add list=any address=codeium.com comment="AI"
+/ip/firewall/address-list add list=any address=designify.com comment="AI"
+/ip/firewall/address-list add list=any address=kaleido.ai comment="AI"
+/ip/firewall/address-list add list=any address=notion.ai comment="AI"
+/ip/firewall/address-list add list=any address=preview.reve.art comment="AI"
+/ip/firewall/address-list add list=any address=remove.bg comment="AI"
+/ip/firewall/address-list add list=any address=sora.com comment="AI"
+/ip/firewall/address-list add list=any address=windsurf.com comment="AI"
+/ip/firewall/address-list add list=any address=x.ai comment="AI"
+/ip/firewall/address-list add list=any address=grok.com comment="AI"
+/ip/firewall/address-list add list=any address=grok.x.com comment="AI"

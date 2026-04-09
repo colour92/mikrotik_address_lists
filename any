@@ -300,61 +300,62 @@
 /ip firewall address-list add list=any address=linkedin.cn comment=Another
 /ip firewall address-list add list=any address=linkedin.com comment=Another
 /ip firewall address-list add list=any address=lnkd.in comment=Another
-/ip firewall address-list add list=any address=pin.it comment=Another
-/ip firewall address-list add list=any address=pinimg.com comment=Another
-/ip firewall address-list add list=any address=pinimg.com.cdn.cloudflare.net comment=Another
-/ip firewall address-list add list=any address=pinterest.at comment=Another
-/ip firewall address-list add list=any address=pinterest.be comment=Another
-/ip firewall address-list add list=any address=pinterest.ca comment=Another
-/ip firewall address-list add list=any address=pinterest.ch comment=Another
-/ip firewall address-list add list=any address=pinterest.cl comment=Another
-/ip firewall address-list add list=any address=pinterest.co comment=Another
-/ip firewall address-list add list=any address=pinterest.co.at comment=Another
-/ip firewall address-list add list=any address=pinterest.co.in comment=Another
-/ip firewall address-list add list=any address=pinterest.co.kr comment=Another
-/ip firewall address-list add list=any address=pinterest.co.nz comment=Another
-/ip firewall address-list add list=any address=pinterest.co.uk comment=Another
-/ip firewall address-list add list=any address=pinterest.com comment=Another
-/ip firewall address-list add list=any address=pinterest.com.au comment=Another
-/ip firewall address-list add list=any address=pinterest.com.bo comment=Another
-/ip firewall address-list add list=any address=pinterest.com.ec comment=Another
-/ip firewall address-list add list=any address=pinterest.com.mx comment=Another
-/ip firewall address-list add list=any address=pinterest.com.pe comment=Another
-/ip firewall address-list add list=any address=pinterest.com.py comment=Another
-/ip firewall address-list add list=any address=pinterest.com.uy comment=Another
-/ip firewall address-list add list=any address=pinterest.com.vn comment=Another
-/ip firewall address-list add list=any address=pinterest.de comment=Another
-/ip firewall address-list add list=any address=pinterest.dk comment=Another
-/ip firewall address-list add list=any address=pinterest.engineering comment=Another
-/ip firewall address-list add list=any address=pinterest.es comment=Another
-/ip firewall address-list add list=any address=pinterest.fr comment=Another
-/ip firewall address-list add list=any address=pinterest.hu comment=Another
-/ip firewall address-list add list=any address=pinterest.id comment=Another
-/ip firewall address-list add list=any address=pinterest.ie comment=Another
-/ip firewall address-list add list=any address=pinterest.in comment=Another
-/ip firewall address-list add list=any address=pinterest.info comment=Another
-/ip firewall address-list add list=any address=pinterest.it comment=Another
-/ip firewall address-list add list=any address=pinterest.jp comment=Another
-/ip firewall address-list add list=any address=pinterest.kr comment=Another
-/ip firewall address-list add list=any address=pinterest.map.fastly.net comment=Another
-/ip firewall address-list add list=any address=pinterest.mx comment=Another
-/ip firewall address-list add list=any address=pinterest.net comment=Another
-/ip firewall address-list add list=any address=pinterest.nl comment=Another
-/ip firewall address-list add list=any address=pinterest.nz comment=Another
-/ip firewall address-list add list=any address=pinterest.pe comment=Another
-/ip firewall address-list add list=any address=pinterest.ph comment=Another
-/ip firewall address-list add list=any address=pinterest.pt comment=Another
-/ip firewall address-list add list=any address=pinterest.ru comment=Another
-/ip firewall address-list add list=any address=pinterest.se comment=Another
-/ip firewall address-list add list=any address=pinterest.th comment=Another
-/ip firewall address-list add list=any address=pinterest.tw comment=Another
-/ip firewall address-list add list=any address=pinterest.uk comment=Another
-/ip firewall address-list add list=any address=pinterest.vn comment=Another
-/ip firewall address-list add list=any address=pinterestmail.com comment=Another
 /ip firewall address-list add list=any address=figma.com comment=Another
 /ip firewall address-list add list=any address=statsig.com comment=Another
 /ip firewall address-list add list=any address=segment.io comment=Another
 /ip firewall address-list add list=any address=browser-intake-datadoghq.com comment=Another
+
+/ip/firewall/address-list add list=any address=pin.it comment=Pinterest
+/ip/firewall/address-list add list=any address=pinimg.com comment=Pinterest
+/ip/firewall/address-list add list=any address=pinimg.com.cdn.cloudflare.net comment=Pinterest
+/ip/firewall/address-list add list=any address=pinterest.at comment=Pinterest
+/ip/firewall/address-list add list=any address=pinterest.be comment=Pinterest
+/ip/firewall/address-list add list=any address=pinterest.ca comment=Pinterest
+/ip/firewall/address-list add list=any address=pinterest.ch comment=Pinterest
+/ip/firewall/address-list add list=any address=pinterest.cl comment=Pinterest
+/ip/firewall/address-list add list=any address=pinterest.co comment=Pinterest
+/ip/firewall/address-list add list=any address=pinterest.co.at comment=Pinterest
+/ip/firewall/address-list add list=any address=pinterest.co.in comment=Pinterest
+/ip/firewall/address-list add list=any address=pinterest.co.kr comment=Pinterest
+/ip/firewall/address-list add list=any address=pinterest.co.nz comment=Pinterest
+/ip/firewall/address-list add list=any address=pinterest.co.uk comment=Pinterest
+/ip/firewall/address-list add list=any address=pinterest.com comment=Pinterest
+/ip/firewall/address-list add list=any address=pinterest.com.au comment=Pinterest
+/ip/firewall/address-list add list=any address=pinterest.com.bo comment=Pinterest
+/ip/firewall/address-list add list=any address=pinterest.com.ec comment=Pinterest
+/ip/firewall/address-list add list=any address=pinterest.com.mx comment=Pinterest
+/ip/firewall/address-list add list=any address=pinterest.com.pe comment=Pinterest
+/ip/firewall/address-list add list=any address=pinterest.com.py comment=Pinterest
+/ip/firewall/address-list add list=any address=pinterest.com.uy comment=Pinterest
+/ip/firewall/address-list add list=any address=pinterest.com.vn comment=Pinterest
+/ip/firewall/address-list add list=any address=pinterest.de comment=Pinterest
+/ip/firewall/address-list add list=any address=pinterest.dk comment=Pinterest
+/ip/firewall/address-list add list=any address=pinterest.engineering comment=Pinterest
+/ip/firewall/address-list add list=any address=pinterest.es comment=Pinterest
+/ip/firewall/address-list add list=any address=pinterest.fr comment=Pinterest
+/ip/firewall/address-list add list=any address=pinterest.hu comment=Pinterest
+/ip/firewall/address-list add list=any address=pinterest.id comment=Pinterest
+/ip/firewall/address-list add list=any address=pinterest.ie comment=Pinterest
+/ip/firewall/address-list add list=any address=pinterest.in comment=Pinterest
+/ip/firewall/address-list add list=any address=pinterest.info comment=Pinterest
+/ip/firewall/address-list add list=any address=pinterest.it comment=Pinterest
+/ip/firewall/address-list add list=any address=pinterest.jp comment=Pinterest
+/ip/firewall/address-list add list=any address=pinterest.kr comment=Pinterest
+/ip/firewall/address-list add list=any address=pinterest.map.fastly.net comment=Pinterest
+/ip/firewall/address-list add list=any address=pinterest.mx comment=Pinterest
+/ip/firewall/address-list add list=any address=pinterest.net comment=Pinterest
+/ip/firewall/address-list add list=any address=pinterest.nl comment=Pinterest
+/ip/firewall/address-list add list=any address=pinterest.nz comment=Pinterest
+/ip/firewall/address-list add list=any address=pinterest.pe comment=Pinterest
+/ip/firewall/address-list add list=any address=pinterest.ph comment=Pinterest
+/ip/firewall/address-list add list=any address=pinterest.pt comment=Pinterest
+/ip/firewall/address-list add list=any address=pinterest.ru comment=Pinterest
+/ip/firewall/address-list add list=any address=pinterest.se comment=Pinterest
+/ip/firewall/address-list add list=any address=pinterest.th comment=Pinterest
+/ip/firewall/address-list add list=any address=pinterest.tw comment=Pinterest
+/ip/firewall/address-list add list=any address=pinterest.uk comment=Pinterest
+/ip/firewall/address-list add list=any address=pinterest.vn comment=Pinterest
+/ip/firewall/address-list add list=any address=pinterestmail.com comment=Pinterest
 
 /ip/firewall/address-list add list=any address=github.com comment=GitHub
 /ip/firewall/address-list add list=any address=www.github.com comment=GitHub
@@ -395,7 +396,6 @@
 /ip/firewall/address-list add list=any address=central.github.com comment=GitHub
 /ip/firewall/address-list add list=any address=collector.github.com comment=GitHub
 /ip/firewall/address-list add list=any address=githubusercontent.com comment=GitHub
-/ip/firewall/address-list add list=any address=media.githubusercontent.com comment=GitHub
 /ip/firewall/address-list add list=any address=lfs.github.com comment=GitHub
 /ip/firewall/address-list add list=any address=github.io comment=GitHub
 /ip/firewall/address-list add list=any address=www.github.io comment=GitHub
@@ -405,24 +405,6 @@
 /ip/firewall/address-list add list=any address=alive.github.com comment=GitHub
 /ip/firewall/address-list add list=any address=api.githubcopilot.com comment=GitHub
 /ip/firewall/address-list add list=any address=copilot-proxy.githubusercontent.com comment=GitHub
-/ip/firewall/address-list add list=any address=140.82.112.0/20 comment=GitHub
-/ip/firewall/address-list add list=any address=143.55.64.0/20 comment=GitHub
-/ip/firewall/address-list add list=any address=185.199.108.0/22 comment=GitHub
-/ip/firewall/address-list add list=any address=192.30.252.0/22 comment=GitHub
-/ip/firewall/address-list add list=any address=185.199.108.0/22 comment=GitHub
-/ip/firewall/address-list add list=any address=20.201.28.0/22 comment=GitHub
-/ip/firewall/address-list add list=any address=20.205.243.0/24 comment=GitHub
-/ip/firewall/address-list add list=any address=20.207.73.0/24 comment=GitHub
-/ip/firewall/address-list add list=any address=20.248.137.0/24 comment=GitHub
-/ip/firewall/address-list add list=any address=20.26.156.0/23 comment=GitHub
-/ip/firewall/address-list add list=any address=192.30.252.0/22 comment=GitHub
-/ip/firewall/address-list add list=any address=140.82.112.0/20 comment=GitHub
-/ip/firewall/address-list add list=any address=151.101.0.0/16 comment=GitHub
-/ip/firewall/address-list add list=any address=13.64.0.0/11 comment=GitHub
-/ip/firewall/address-list add list=any address=20.0.0.0/11 comment=GitHub
-/ip/firewall/address-list add list=any address=40.64.0.0/10 comment=GitHub
-/ip/firewall/address-list add list=any address=13.32.0.0/15 comment=GitHub
-/ip/firewall/address-list add list=any address=52.84.0.0/15 comment=GitHub
 /ip/firewall/address-list add list=any address=140.82.112.0/20 comment=GitHub
 /ip/firewall/address-list add list=any address=143.55.64.0/20 comment=GitHub
 /ip/firewall/address-list add list=any address=185.199.108.0/22 comment=GitHub

@@ -120,6 +120,22 @@
 /ip/firewall/address-list add list=cdn address=188.166.0.0/16 comment=digitalocean
 /ip/firewall/address-list add list=cdn address=206.189.0.0/16 comment=digitalocean
 
+/ip/firewall/address-list add list=cdn address=deepmind.com comment=google
+/ip/firewall/address-list add list=cdn address=deepmind.google comment=google
+/ip/firewall/address-list add list=cdn address=ai.google.dev comment=google
+/ip/firewall/address-list add list=cdn address=generativeai.google comment=google
+/ip/firewall/address-list add list=cdn address=gemini.google.com comment=google
+/ip/firewall/address-list add list=cdn address=notebooklm.google.com comment=google
+/ip/firewall/address-list add list=cdn address=bard.google.com comment=google
+/ip/firewall/address-list add list=cdn address=makersuite.google.com comment=google
+/ip/firewall/address-list add list=cdn address=aistudio.google.com comment=google
+/ip/firewall/address-list add list=cdn address=generativelanguage.googleapis.com comment=google
+/ip/firewall/address-list add list=cdn address=aida.googleapis.com comment=google
+/ip/firewall/address-list add list=cdn address=firebaseinstallations.googleapis.com comment=google
+/ip/firewall/address-list add list=cdn address=speechs3proto2-pa.googleapis.com comment=google
+/ip/firewall/address-list add list=cdn address=antigravity.googleapis.com comment=google
+/ip/firewall/address-list add list=cdn address=robinfrontend-pa.googleapis.com comment=google
+/ip/firewall/address-list add list=cdn address=proactivebackend-pa.googleapis.com comment=google
 /ip/firewall/address-list add list=cdn address=google.com comment=google
 /ip/firewall/address-list add list=cdn address=googleapis.com comment=google
 /ip/firewall/address-list add list=cdn address=gstatic.com comment=google

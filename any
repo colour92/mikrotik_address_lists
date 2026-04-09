@@ -450,6 +450,27 @@
 /ip/firewall/address-list add list=any address=twimg.com comment=Twitter
 /ip/firewall/address-list add list=any address=video.twimg.com comment=Twitter
 /ip/firewall/address-list add list=any address=api.twitter.com comment=Twitter
+/ip/firewall/address-list add list=any address=ads-twitter.com comment=Twitter
+/ip/firewall/address-list add list=any address=cms-twdigitalassets.com comment=Twitter
+/ip/firewall/address-list add list=any address=periscope.tv comment=Twitter
+/ip/firewall/address-list add list=any address=pscp.tv comment=Twitter
+/ip/firewall/address-list add list=any address=t.co comment=Twitter
+/ip/firewall/address-list add list=any address=tellapart.com comment=Twitter
+/ip/firewall/address-list add list=any address=tweetdeck.com comment=Twitter
+/ip/firewall/address-list add list=any address=twitpic.com comment=Twitter
+/ip/firewall/address-list add list=any address=twitter.biz comment=Twitter
+/ip/firewall/address-list add list=any address=twitter.jp comment=Twitter
+/ip/firewall/address-list add list=any address=twittercommunity.com comment=Twitter
+/ip/firewall/address-list add list=any address=twitterflightschool.com comment=Twitter
+/ip/firewall/address-list add list=any address=twitterinc.com comment=Twitter
+/ip/firewall/address-list add list=any address=twitteroauth.com comment=Twitter
+/ip/firewall/address-list add list=any address=twitterstat.us comment=Twitter
+/ip/firewall/address-list add list=any address=twtrdns.net comment=Twitter
+/ip/firewall/address-list add list=any address=twttr.com comment=Twitter
+/ip/firewall/address-list add list=any address=twttr.net comment=Twitter
+/ip/firewall/address-list add list=any address=twvid.com comment=Twitter
+/ip/firewall/address-list add list=any address=vine.co comment=Twitter
+/ip/firewall/address-list add list=any address=x.com comment=Twitter
 
 /ip/firewall/address-list add list=any address=twitch.tv comment=Twitch
 /ip/firewall/address-list add list=any address=www.twitch.tv comment=Twitch

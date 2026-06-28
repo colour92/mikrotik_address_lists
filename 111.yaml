@@ -297,8 +297,8 @@ rule-providers:
 
   whatsapp-ips:
     <<: *rule_behavior_ipcidr_mrs
-    url: https://raw.githubusercontent.com/OMchik33/custom-rules/refs/heads/main/mihomo/whatsapp-ips.yaml
-    path: ./rule-sets/whatsapp-ips.yaml
+    url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/whatsapp.mrs
+    path: ./rule-sets/whatsapp-ips.mrs
 
   steam-domains:
     <<: *rule_behavior_domain_mrs

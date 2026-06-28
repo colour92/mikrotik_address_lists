@@ -282,12 +282,12 @@ proxy-groups:
 rule-providers:
   telegram-domains:
     <<: *rule_behavior_domain_mrs
-    url: https://github.com/MetaCubeX/meta-rules-dat/raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/telegram.mrs
+    url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/telegram.mrs
     path: ./rule-sets/telegram-domains.mrs
 
   telegram-ips:
     <<: *rule_behavior_ipcidr_mrs
-    url: https://github.com/MetaCubeX/meta-rules-dat/raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/telegram.mrs
+    url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/telegram.mrs
     path: ./rule-sets/telegram-ips.mrs
 
   whatsapp-domains:
@@ -297,22 +297,22 @@ rule-providers:
 
   whatsapp-ips:
     <<: *rule_behavior_ipcidr_mrs
-    url: https://github.com/MetaCubeX/meta-rules-dat/raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/whatsapp.mrs
+    url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/whatsapp.mrs
     path: ./rule-sets/whatsapp-ips.mrs
 
   steam-domains:
     <<: *rule_behavior_domain_mrs
-    url: https://github.com/MetaCubeX/meta-rules-dat/raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/steam.mrs
+    url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/steam.mrs
     path: ./rule-sets/steam-domains.mrs
 
   steam-ips:
     <<: *rule_behavior_ipcidr_mrs
-    url: https://github.com/MetaCubeX/meta-rules-dat/raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/steam.mrs
+    url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/steam.mrs
     path: ./rule-sets/steam-ips.mrs
 
   twitch-domains:
     <<: *rule_behavior_domain_mrs
-    url: https://github.com/MetaCubeX/meta-rules-dat/raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/twitch.mrs
+    url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/twitch.mrs
     path: ./rule-sets/twitch-domains.mrs
 
   discord-domains:
@@ -457,9 +457,4 @@ rules:
   - IN-NAME,tun-in,SELECTOR
   - IN-NAME,mixed-in,SELECTOR
 
-  - DOMAIN-SUFFIX,ea.com,GAME
-DOMAIN-SUFFIX,origin.com,GAME
-DOMAIN-SUFFIX,battlefield.com,GAME
-DOMAIN-SUFFIX,accounts.ea.com,GAME
-DOMAIN-SUFFIX,gateway.ea.com,GAME
-MATCH,SELECTOR
+  - MATCH,SELECTOR

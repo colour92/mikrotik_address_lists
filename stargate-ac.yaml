@@ -1,0 +1,465 @@
+# ============================================================================
+# ШАБЛОН STARGATE (Оптимизирован под Mikrotik hAP ac²: 128MB RAM)
+# Логика маршрутизации полностью сохранена. Обновлены ссылки на подписки (SUB4 удален).
+# ============================================================================
+
+allow-lan: true
+mode: rule
+log-level: warning # Оптимизация ОЗУ: пишем в лог только важные предупреждения
+ipv6: true
+unified-delay: true
+external-controller: 0.0.0.0:9091
+external-ui: ui
+external-ui-url: 
+secret: B4hdg8YToq
+
+profile:
+  store-selected: true
+
+# ============================================================================
+# === ГЕОДАННЫЕ (ZKEEN) ===
+# ============================================================================
+geodata-mode: true
+geox-url:
+  geosite: "https://github.com/jameszeroX/zkeen-domains/releases/latest/download/zkeen.dat"
+  geoip: "https://github.com/jameszeroX/zkeen-ip/releases/latest/download/zkeenip.dat"
+geo-auto-update: true
+geo-update-interval: 48 # Оптимизация CPU: обновляем раз в 2 дня вместо 1
+
+# ============================================================================
+# === АНАЛИЗ ТРАФИКА (Оптимизирован под 128MB RAM) ===
+# ============================================================================
+sniffer:
+  enable: false # Отключено для Mikrotik, чтобы избежать утечек памяти и зависаний
+
+# ============================================================================
+# === DNS НАСТРОЙКИ ===
+# ============================================================================
+dns:
+  enable: true
+  use-system-hosts: true
+  nameserver:
+    - system
+
+# ============================================================================
+# === СЛУШАТЕЛИ ===
+# ============================================================================
+listeners:
+  - name: mixed-in
+    type: mixed
+    port: 1080
+  - name: tun-in
+    type: tun
+    stack: system
+    auto-detect-interface: true
+    auto-route: true
+    auto-redirect: true
+    inet4-address:
+    - 198.19.0.1/30
+
+# ============================================================================
+# === ПОДПИСКИ НА ПРОКСИ (ОБНОВЛЕННЫЕ ССЫЛКИ) ===
+# ============================================================================
+proxy-providers:
+  SUB1:
+    type: http
+    url: "https://subscribe.051ntlab.xyz/paqJ_Bn3bfTnqk9B"
+    interval: 3600
+    health-check:
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 300
+      timeout: 5000
+      lazy: true
+      expected-status: 204
+    header:
+      x-hwid: [2d94cfeeb18346afa254a3da3e3bbba4]
+  SUB2:
+    type: http
+    url: "https://lv.mmlemeshev.online:2096/subs/4sv7vtzk98bqowif"
+    interval: 3600
+    health-check:
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 300
+      timeout: 5000
+      lazy: true
+      expected-status: 204
+    header:
+      x-hwid: [2d94cfeeb18346afa254a3da3e3bbba4]
+  SUB3:
+    type: http
+    url: "https://de.mmlemeshev.online:2096/subs/fgoyl0g1gqsqs1ka"
+    interval: 3600
+    health-check:
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 300
+      timeout: 5000
+      lazy: true
+      expected-status: 204
+    header:
+      x-hwid: [2d94cfeeb18346afa254a3da3e3bbba4]
+
+health_check: &health_check
+  url: https://www.gstatic.com/generate_204
+  interval: 200
+  expected-status: 204
+
+url_test: &url_test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  lazy: false
+  expected-status: 204
+  tolerance: 50
+
+providers_list: &providers_list [SUB1, SUB2, SUB3]
+proxy_list_all: &proxy_list_all [SELECTOR, AUTO, MANUAL, DIRECT]
+proxy_list_youtube: &proxy_list_youtube [DIRECT, SELECTOR, AUTO, MANUAL]
+
+# === ИКОНКИ ===
+icon_telegram: &icon_telegram https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Telegram.png
+icon_whatsapp: &icon_whatsapp https://github.com/OMchik33/Whatsapp-icon/blob/master/icons/whatsapp_194x194.png?raw=true
+icon_direct: &icon_direct https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Direct.png
+icon_facebook: &icon_facebook https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Facebook.png
+icon_amazon: &icon_amazon https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Amazon.png
+icon_global: &icon_global https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Global.png
+icon_google: &icon_google https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Google.png
+icon_cloudflare: &icon_cloudflare https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Cloudflare.png
+icon_steam: &icon_steam https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Steam.png
+icon_discord: &icon_discord https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Discord.png
+icon_youtube: &icon_youtube https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/YouTube.png
+icon_twitch: &icon_twitch https://img.icons8.com/3d-fluency/94/twitch.png
+icon_bot: &icon_bot https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Dark/Bot.png
+icon_microsoft: &icon_microsoft https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Dark/Microsoft.png
+icon_download: &icon_download https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Download.png
+icon_media: &icon_media https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Media.png
+icon_puzzle: &icon_puzzle https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Puzzle.png
+
+# ============================================================================
+# === БАЗОВЫЕ ШАБЛОНЫ ПРАВИЛ ===
+# ============================================================================
+rule_provider_base: &rule_provider_base
+  type: http
+  interval: 86400
+
+rule_behavior_domain_mrs: &rule_behavior_domain_mrs
+  <<: *rule_provider_base
+  behavior: domain
+  format: mrs
+
+rule_behavior_ipcidr_mrs: &rule_behavior_ipcidr_mrs
+  <<: *rule_provider_base
+  behavior: ipcidr
+  format: mrs
+
+rule_behavior_classical_mrs: &rule_behavior_classical_mrs
+  <<: *rule_provider_base
+  behavior: classical
+  format: mrs
+
+# ============================================================================
+# === ГРУППЫ ПРОКСИ ===
+# ============================================================================
+proxy-groups:
+  - name: SELECTOR
+    type: select
+    include-all: true
+    proxies: [AUTO, MANUAL, DIRECT]
+
+  - name: AUTO
+    type: fallback
+    proxies: [FASTEST, FAILOVER, MANUAL, DIRECT]
+    <<: *health_check
+
+  - name: FASTEST
+    type: url-test
+    use: *providers_list
+    <<: *url_test
+
+  - name: FAILOVER
+    type: fallback
+    use: *providers_list
+    <<: *health_check
+
+  - name: MANUAL
+    type: select
+    use: *providers_list
+
+  - name: GLOBAL
+    type: select
+    hidden: true
+    icon: *icon_global
+    proxies: *proxy_list_all
+
+  - name: QUIC
+    type: select
+    proxies: [REJECT, PASS]
+
+  - name: Telegram
+    type: select
+    icon: *icon_telegram
+    proxies: *proxy_list_all
+
+  - name: WhatsApp
+    type: select
+    icon: *icon_whatsapp
+    proxies: *proxy_list_all
+
+  - name: ECH-Refilter
+    type: select
+    icon: *icon_direct
+    proxies: *proxy_list_all
+
+  - name: META
+    type: select
+    icon: *icon_facebook
+    proxies: *proxy_list_all
+
+  - name: CDN
+    type: select
+    icon: *icon_global
+    proxies: *proxy_list_all
+
+  - name: VPS & Облака
+    type: select
+    icon: *icon_global
+    proxies: *proxy_list_all
+
+  - name: MEGA
+    type: select
+    icon: *icon_global
+    proxies: *proxy_list_all
+
+  - name: Steam
+    type: select
+    icon: *icon_steam
+    proxies: *proxy_list_all
+
+  - name: Discord
+    type: select
+    icon: *icon_discord
+    proxies: *proxy_list_all
+
+  - name: YouTube
+    type: select
+    icon: *icon_youtube
+    proxies: *proxy_list_youtube
+
+  - name: Twitch
+    type: select
+    icon: *icon_twitch
+    proxies: *proxy_list_all
+
+  - name: AI & Разработка
+    type: select
+    icon: *icon_bot
+    proxies: *proxy_list_all
+
+  - name: Microsoft
+    type: select
+    icon: *icon_microsoft
+    proxies: *proxy_list_all
+
+  - name: Torrent-Traffic
+    type: select
+    icon: *icon_download
+    proxies: *proxy_list_all
+
+  - name: Politic-Domains
+    type: select
+    icon: *icon_media
+    proxies: *proxy_list_all
+
+  - name: Other-Domains
+    type: select
+    icon: *icon_puzzle
+    proxies: *proxy_list_all
+
+# ============================================================================
+# === ВНЕШНИЕ НАБОРЫ ПРАВИЛ (Формат MRS) ===
+# ============================================================================
+rule-providers:
+  telegram-domains:
+    <<: *rule_behavior_domain_mrs
+    url: https://github.com/MetaCubeX/meta-rules-dat/raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/telegram.mrs
+    path: ./rule-sets/telegram-domains.mrs
+
+  telegram-ips:
+    <<: *rule_behavior_ipcidr_mrs
+    url: https://github.com/MetaCubeX/meta-rules-dat/raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/telegram.mrs
+    path: ./rule-sets/telegram-ips.mrs
+
+  whatsapp-domains:
+    <<: *rule_behavior_domain_mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/whatsapp.mrs
+    path: ./rule-sets/whatsapp-domains.mrs
+
+  whatsapp-ips:
+    <<: *rule_behavior_ipcidr_mrs
+    url: https://github.com/MetaCubeX/meta-rules-dat/raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/whatsapp.mrs
+    path: ./rule-sets/whatsapp-ips.mrs
+
+  steam-domains:
+    <<: *rule_behavior_domain_mrs
+    url: https://github.com/MetaCubeX/meta-rules-dat/raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/steam.mrs
+    path: ./rule-sets/steam-domains.mrs
+
+  steam-ips:
+    <<: *rule_behavior_ipcidr_mrs
+    url: https://github.com/MetaCubeX/meta-rules-dat/raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/steam.mrs
+    path: ./rule-sets/steam-ips.mrs
+
+  twitch-domains:
+    <<: *rule_behavior_domain_mrs
+    url: https://github.com/MetaCubeX/meta-rules-dat/raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/twitch.mrs
+    path: ./rule-sets/twitch-domains.mrs
+
+  discord-domains:
+    <<: *rule_behavior_domain_mrs
+    url: https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/discord.mrs
+    path: ./rule-sets/discord-domains.mrs
+
+  discord-voiceips:
+    <<: *rule_behavior_ipcidr_mrs
+    url: https://github.com/legiz-ru/mihomo-rule-sets/raw/main/other/discord-voice-ip-list.mrs
+    path: ./rule-sets/discord-voiceips.mrs
+
+  google-gemini:
+    <<: *rule_behavior_domain_mrs
+    url: https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/google-gemini.mrs
+    path: ./rule-sets/google-gemini.mrs
+
+  openai:
+    <<: *rule_behavior_domain_mrs
+    url: https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/openai.mrs
+    path: ./rule-sets/openai.mrs
+
+  microsoft:
+    <<: *rule_behavior_domain_mrs
+    url: https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/microsoft.mrs
+    path: ./rule-sets/microsoft.mrs
+
+  anthropic:
+    <<: *rule_behavior_domain_mrs
+    url: https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/anthropic.mrs
+    path: ./rule-sets/anthropic.mrs
+
+  perplexity:
+    <<: *rule_behavior_domain_mrs
+    url: https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/perplexity.mrs
+    path: ./rule-sets/perplexity.mrs
+
+  youtube:
+    <<: *rule_behavior_domain_mrs
+    url: https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/youtube.mrs
+    path: ./rule-sets/youtube.mrs
+
+  refilter-noech:
+    <<: *rule_behavior_domain_mrs
+    url: https://github.com/legiz-ru/mihomo-rule-sets/raw/main/re-filter/re-filter-noech.mrs
+    path: ./rule-sets/refilter-noech.mrs
+
+  refilter-ech:
+    <<: *rule_behavior_domain_mrs
+    url: https://github.com/legiz-ru/mihomo-rule-sets/raw/main/re-filter/re-filter-ech.mrs
+    path: ./rule-sets/refilter-ech.mrs
+
+  refilter-ipsum:
+    <<: *rule_behavior_ipcidr_mrs
+    url: https://github.com/legiz-ru/mihomo-rule-sets/raw/main/re-filter/ip-rule.mrs
+    path: ./rule-sets/refilter-ip-rule.mrs
+
+  torrent-clients:
+    <<: *rule_behavior_classical_mrs
+    url: https://github.com/legiz-ru/mihomo-rule-sets/raw/main/other/torrent-clients.mrs
+    path: ./rule-sets/torrent-clients.mrs
+
+  torrent-trackers:
+    <<: *rule_behavior_domain_mrs
+    url: https://raw.githubusercontent.com/legiz-ru/mihomo-rule-sets/main/other/torrent-trackers.mrs
+    path: ./rule-sets/torrent-trackers.mrs
+
+  torrent-websites:
+    <<: *rule_behavior_domain_mrs
+    url: https://raw.githubusercontent.com/legiz-ru/mihomo-rule-sets/main/other/torrent-websites.mrs
+    path: ./rule-sets/torrent-websites.mrs
+
+  misc-ai:
+    <<: *rule_behavior_classical_mrs
+    url: https://github.com/legiz-ru/mihomo-rule-sets/raw/main/ai/ai-all.mrs
+    path: ./rule-sets/misc-ai.mrs
+
+# ============================================================================
+# === ПРАВИЛА МАРШРУТИЗАЦИИ ===
+# ============================================================================
+rules:
+  - IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+  - IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
+  - IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
+  - IP-CIDR,169.254.0.0/16,DIRECT,no-resolve
+  - IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+  - IP-CIDR,192.88.99.0/24,DIRECT,no-resolve
+  - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+  - IP-CIDR,224.0.0.0/4,DIRECT,no-resolve
+  - DOMAIN-SUFFIX,local,DIRECT
+  - DOMAIN-SUFFIX,lan,DIRECT
+
+  - AND,((NETWORK,udp),(DST-PORT,443)),QUIC
+
+  - OR,((DOMAIN,ipwho.is),(DOMAIN,api.ip.sb),(DOMAIN,ipapi.co),(DOMAIN,ipinfo.io),(DOMAIN,2ip.io),(DOMAIN,2ip.ru)),SELECTOR
+
+  - OR,((RULE-SET,torrent-clients),(RULE-SET,torrent-trackers)),Torrent-Traffic
+  - RULE-SET,torrent-websites,Torrent-Traffic
+
+  - RULE-SET,misc-ai,AI & Разработка
+
+  - OR,((RULE-SET,telegram-domains),(RULE-SET,telegram-ips)),Telegram
+  - OR,((RULE-SET,whatsapp-domains),(RULE-SET,whatsapp-ips)),WhatsApp
+  - OR,((RULE-SET,discord-domains),(RULE-SET,discord-voiceips)),Discord
+
+  - OR,((RULE-SET,steam-domains),(RULE-SET,steam-ips)),Steam
+
+  - OR,((RULE-SET,anthropic),(RULE-SET,perplexity),(RULE-SET,google-gemini),(RULE-SET,openai)),AI & Разработка
+  - RULE-SET,microsoft,Microsoft
+
+  - RULE-SET,twitch-domains,Twitch
+  - RULE-SET,youtube,YouTube
+
+  - GEOIP,akamai,CDN
+  - GEOIP,amazon,CDN
+  - GEOIP,fastly,CDN
+  - GEOIP,google,CDN
+  - GEOIP,cloudflare,CDN
+  - GEOIP,cdn77,CDN
+
+  - DOMAIN,cloudflare-ech.com,SELECTOR
+  - RULE-SET,refilter-ech,DIRECT
+  - RULE-SET,refilter-noech,ECH-Refilter
+  - RULE-SET,refilter-ipsum,ECH-Refilter
+
+  - GEOIP,meta,META
+  - GEOIP,digitalocean,VPS & Облака
+  - GEOIP,hetzner,VPS & Облака
+  - GEOIP,mega,MEGA
+  - GEOIP,oracle,VPS & Облака
+  - GEOIP,ovh,VPS & Облака
+  - GEOIP,vultr,VPS & Облака
+
+  - GEOIP,ru,DIRECT
+
+  - GEOSITE,domains,Other-Domains
+  - GEOSITE,other,Other-Domains
+  - GEOSITE,politic,Politic-Domains
+
+  - OR,((DST-PORT,596-599),(DST-PORT,1400),(DST-PORT,3478-3480),(DST-PORT,4379-4380),(DST-PORT,5222),(DST-PORT,5223),(DST-PORT,5228),(DST-PORT,5242),(DST-PORT,6250),(DST-PORT,12000-65535),(DST-PORT,27101-65535),(DST-PORT,45395),(DST-PORT,50318),(DST-PORT,59234)),SELECTOR
+
+  - IN-NAME,tun-in,SELECTOR
+  - IN-NAME,mixed-in,SELECTOR
+
+  - DOMAIN-SUFFIX,ea.com,GAME
+DOMAIN-SUFFIX,origin.com,GAME
+DOMAIN-SUFFIX,battlefield.com,GAME
+DOMAIN-SUFFIX,accounts.ea.com,GAME
+DOMAIN-SUFFIX,gateway.ea.com,GAME
+MATCH,SELECTOR

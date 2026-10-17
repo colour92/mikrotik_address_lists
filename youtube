@@ -1214,7 +1214,7 @@ ip/firewall/address-list add list=youtube address=1.9.57.0/24
 /ip/firewall/address-list add list=youtube address=rr5---sn-5go7yner.googlevideo.com
 /ip/firewall/address-list add list=youtube address=rr5---sn-aj5go5-5p.googlevideo.com
 /ip/firewall/address-list add list=youtube address=rr5---sn-ajixh5-55.googlevideo.com
-/ip/firewall/address-list add list=youtube addresss=rr5---sn-gxuo03g-3c2s.googlevideo.com
+/ip/firewall/address-list add list=youtube address=rr5---sn-gxuo03g-3c2s.googlevideo.com
 /ip/firewall/address-list add list=youtube address=rr5---sn-ixh7rn76.googlevideo.com
 /ip/firewall/address-list add list=youtube address=rr5---sn-ixh7yn7e.googlevideo.com
 /ip/firewall/address-list add list=youtube address=rr6---sn-gxuo03g-3c2s.googlevideo.com

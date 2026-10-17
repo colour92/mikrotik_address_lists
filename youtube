@@ -1390,7 +1390,7 @@ ip/firewall/address-list add list=youtube address=1.9.57.0/24
 /ip/firewall/address-list add list=youtube address=youtube.soy
 /ip/firewall/address-list add list=youtube address=youtube.sv
 /ip/firewall/address-list add list=youtube address=youtube.tn
-/ip/firewall/address-list add `list=youtube address=youtube.tv`
+/ip/firewall/address-list add list=youtube address=youtube.tv
 /ip/firewall/address-list add list=youtube address=youtube.ua
 /ip/firewall/address-list add list=youtube address=youtube.ug
 /ip/firewall/address-list add list=youtube address=youtube.uy
